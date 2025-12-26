@@ -4,74 +4,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Brand</title>
+    <title>Madrin Arfilida | Fullstack Developer</title>
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <div class="logo">MyName</div>
-            <ul>
+        <nav class="container">
+            <div class="logo">Madrin.</div>
+            <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#projects">Work</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="hero">
-        <div class="container">
-            <h1>Hi, I'm Madrin Arfilida</h1>
-            <p>Fullstack Web Developer | ASP.NET Developer | Odoo Developer</p>
-            <a href="#contact" class="btn">Get in Touch</a>
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I am a Fullstack Web Developer with over 6 years of experience in developing web applications and web
-                services using ASP.NET technology. I have expertise in implementing creative and effective solutions
-                using ASP.NET, C#, SQL Server, Odoo, and other related technologies.</p>
-            <p style="margin-top: 1rem; color: #555;"><strong>Skills:</strong> C#, VB.NET, JavaScript, TypeScript, SQL,
-                HTML, CSS, ASP.NET (Core, MVC, Web API), Odoo.</p>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="container">
-            <h2>Experience & Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Human Capital Services</h3>
-                    <p>Modules developed for PT Semen Indonesia (Persero) Tbk. Streamlining HR processes and services.
-                    </p>
-                </div>
-                <div class="project-card">
-                    <h3>Supply Chain System</h3>
-                    <p>Information system modules (e-SM, e-MM, e-PR, e-GR) developed for PT. Trakindo.</p>
-                </div>
-                <div class="project-card">
-                    <h3>SHE Legal Compliance</h3>
-                    <p>Safety, Health, and Environment legal compliance modules developed for PT. Trakindo.</p>
+    <main>
+        <section id="hero">
+            <div class="container hero-content">
+                <p class="subtitle">Hello, I'm</p>
+                <h1>Madrin Arfilida</h1>
+                <p class="role">Fullstack Web Developer <span class="divider">|</span> ASP.NET <span
+                        class="divider">|</span> Odoo</p>
+                <div class="cta-group">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
                 </div>
             </div>
-        </div>
-    </section>
+            <div class="hero-bg-glow"></div>
+        </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Let's work together! Connect with me on LinkedIn:</p>
-            <p style="margin-top: 10px;"><a href="https://www.linkedin.com/in/madrin-arfilida/"
-                    target="_blank">linkedin.com/in/madrin-arfilida</a></p>
-        </div>
-    </section>
+        <section id="about" class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2>About Me</h2>
+                </div>
+                <div class="about-content">
+                    <p class="lead">I am a Fullstack Web Developer with over 6 years of experience in developing web
+                        applications and web services using ASP.NET technology.</p>
+                    <p>I have expertise in implementing creative and effective solutions using ASP.NET, C#, SQL Server,
+                        and Odoo. My technical proficiency spans across the full stack, from crafting responsive
+                        frontends with <strong>JavaScript & TypeScript</strong> to architecting robust backends with
+                        <strong>.NET Core & Python</strong>.</p>
+
+                    <div class="skills-grid">
+                        <div class="skill-item"><i class="fa-brands fa-microsoft"></i> <span>ASP.NET Core / MVC</span>
+                        </div>
+                        <div class="skill-item"><i class="fa-brands fa-python"></i> <span>Odoo / Python</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-database"></i> <span>MSSQL / PostgreSQL</span>
+                        </div>
+                        <div class="skill-item"><i class="fa-brands fa-js"></i> <span>TypeScript / JS</span></div>
+                        <div class="skill-item"><i class="fa-brands fa-docker"></i> <span>Docker / DevOps</span></div>
+                        <div class="skill-item"><i class="fa-solid fa-code"></i> <span>Entity Framework</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section-padding" style="background: rgba(255,255,255,0.02);">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Work Experience</h2>
+                </div>
+                <div class="experience-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Feb 2023 - Present</div>
+                        <div class="timeline-content">
+                            <h3>Dotnet Developer | Odoo Developer</h3>
+                            <span class="company">PT Sinergi Informatika Semen Indonesia (SISI)</span>
+                            <p>Designing and developing Human Capital Services web-based modules integrated with SAP
+                                (RFC) using ASP.NET C# Web Form and Bootstrap.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jan 2016 - Mar 2019</div>
+                        <div class="timeline-content">
+                            <h3>Programmer Assistant</h3>
+                            <span class="company">Panasonic</span>
+                            <p>Planned and coordinated system requirements gathering, documentation, and user acceptance
+                                tests (UAT) for internal development teams.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jul 2015 - May 2016</div>
+                        <div class="timeline-content">
+                            <h3>Junior System Developer</h3>
+                            <span class="company">Innovator Mind</span>
+                            <p>Designed and maintained web-based systems using ASP.NET C#, MSSQL Server, and .NET 4.5
+                                Framework.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Selected Projects</h2>
+                </div>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="card-icon"><i class="fa-solid fa-users-gear"></i></div>
+                        <h3>Human Capital Services</h3>
+                        <p>Streamlining HR processes for PT Semen Indonesia. A comprehensive module for managing
+                            employee lifecycles.</p>
+                        <div class="tags">
+                            <span>ASP.NET</span><span>SQL</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="card-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                        <h3>Supply Chain System</h3>
+                        <p>Integrated information system modules (e-SM, e-MM, e-PR, e-GR) developed for robust logistics
+                            at PT. Trakindo.</p>
+                        <div class="tags">
+                            <span>Web API</span><span>.NET Core</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="card-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                        <h3>SHE Legal Compliance</h3>
+                        <p> Ensuring Safety, Health, and Environment auditing and compliance tracking for enterprise
+                            standards.</p>
+                        <div class="tags">
+                            <span>MVC</span><span>Compliance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-padding">
+            <div class="container contact-wrapper">
+                <h2>Let's Collaborate</h2>
+                <p>Have a project in mind or want to discuss the latest tech? I'd love to hear from you.</p>
+                <a href="https://www.linkedin.com/in/madrin-arfilida/" target="_blank" class="social-link">
+                    <i class="fa-brands fa-linkedin"></i> Connect on LinkedIn
+                </a>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 My Name. All rights reserved.</p>
+            <p>&copy; 2024 Madrin Arfilida. Built with passion.</p>
         </div>
     </footer>
 </body>
