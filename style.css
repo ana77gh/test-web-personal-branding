@@ -327,6 +327,48 @@ nav {
     font-size: 0.9rem;
 }
 
+.experience-details {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.experience-details p {
+    margin-bottom: 8px;
+}
+
+.experience-details ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.experience-details li {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.experience-details li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent-primary);
+    font-weight: bold;
+}
+
+.timeline-item:nth-child(odd) .experience-details li {
+    padding-left: 0;
+    padding-right: 15px;
+}
+
+.timeline-item:nth-child(odd) .experience-details li::before {
+    left: auto;
+    right: 0;
+    transform: rotate(180deg);
+}
+
+
 /* Timeline Mobile */
 @media (max-width: 768px) {
     .experience-timeline::after {
